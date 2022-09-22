@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SL CHAT</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.2/socket.io.js" integrity="sha512-VJ6+sp2E5rFQk05caiXXzQd1wBABpjEj1r5kMiLmGAAgwPItw1YpqsCCBtq8Yr1x6C49/mTpRdXtq8O2RcZhlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  </head>
+  <body style="min-height: 100vh;">
+    <div class="container-fluid bg bg-info">
+        <div class="container text-center text-light py-2">
+            <h3 id="nav-pres">Olá, Seja bem vindo!</h3>
+        </div>
+    </div>
+    <div id="corpoapp" class="container border border-1 my-2" style="min-height: 80vh; border-radius: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <h3 class="text-center my-2">SL chat</h3>
+        <form id="formEntrada" class="form-control" style="width: 50%;">
+            <input type="text" class="form-control my-2 py-3" name="username" placeholder="Digite seu nome para entrar " required>
+            <button class="btn btn-primary my-2" style="width: 100%;" type="submit">ENTRAR</button>
+        </form>
+    </div>
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>

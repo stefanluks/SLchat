@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.alert-msg{
+    position: fixed !important;
+    top: -100%;
+    left: 50%;
+    min-width: 400px !important;
+    transform: translate(-50%);
+    animation: normal 3s animAlert;
+}
+
+@keyframes animAlert {
+    0%,100%{
+        top: -100%;
+    }
+    20%, 80%{
+        top: 80px;
+    }
+}
+
+#corpoapp{
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.form-app{
+    width: 100% !important;
+    margin-bottom: 10px;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.messages{
+    max-width: 95% !important;
+    border-radius: 10px;
+    align-self: flex-start;
+    height: calc(80vh - 90px) !important;
+    height: 80%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.messages .msg{
+    width: 50%;
+    min-height: 30px;
+    max-height: 150px;
+    overflow-y: auto;
+    word-wrap: break-word;
+    text-align: start;
+    background-color: lightseagreen;
+    color: white;
+    padding-left: 3px;
+    margin: 3px 0px;
+    border-radius: 10px;
+
+}
+
+.messages .msg p{
+    text-align: start;
+    word-wrap: break-word;
+}
+
+.messages .msg.me{
+    align-self: flex-end;
+}
+
+.form-app .entrada-msg{
+    width: 80%;
+    height: 50px;
+    resize: none;
+    border-radius: 10px 0px 0px 10px;    
+}
+
+.form-app .btnEnviar{
+    width: 20%;
+    min-height: 50px !important;
+    border-radius: 0px 10px 10px 0px;
+}
