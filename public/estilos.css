@@ -76,6 +76,14 @@
     align-self: flex-end;
 }
 
+.messages .msg.server{
+    width: 100%;
+    background-color: blueviolet;
+    color: white;
+    padding: 5px 0px;
+    text-align: center;
+}
+
 .form-app .entrada-msg{
     width: 80%;
     height: 50px;

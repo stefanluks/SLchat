@@ -93,6 +93,7 @@ window.onload = () => {
         let caixaMensagens = document.querySelector(".messages");
         let div = document.createElement("div");
         if(mensagem.id === userObjMaster.id) div.className = "msg me";
+        else if(mensagem.author === "#server") div.className = "msg server";
         else div.className = "msg";
         div.innerHTML = "<b>"+mensagem.author+"</b>: "+ mensagem.message;
         if(caixaMensagens) caixaMensagens.appendChild(div);

@@ -11,6 +11,8 @@ app.set("views", path.join(__dirname,"public"));
 app.engine("html", require("ejs").renderFile);
 app.set("view engine","html");
 
+const PORT = process.env.PORT || 3000;
+
 app.use("/", (request, response) => {
     response.render("index.html");
 });
@@ -71,7 +73,6 @@ io.on("connection", socket => {
 
     socket.on("disconnect", () => {
         listaUsers.forEach((user,indice) => {
-            console.log(user);
             if(user.id === socket.id){
                 let obj = {author: "#server",message: "O usuario "+user.username+" Saiu..."};
     
@@ -86,7 +87,8 @@ io.on("connection", socket => {
     });
 });
 
-server.listen(3000 || 80);
+server.listen(PORT);
+
 console.log("-----------------------------------------");
 console.log("| - - - - - - SERVER ONLINE - - - - - - |");
 console.log("-----------------------------------------");
