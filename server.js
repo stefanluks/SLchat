@@ -11,7 +11,7 @@ app.set("views", path.join(__dirname,"public"));
 app.engine("html", require("ejs").renderFile);
 app.set("view engine","html");
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 80;
 
 app.use("/", (request, response) => {
     response.render("index.html");
