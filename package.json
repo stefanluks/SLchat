@@ -2,7 +2,7 @@
   "name": "slchat",
   "version": "1.0.0",
   "description": "Simple chat app whit node, socket.io server",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
